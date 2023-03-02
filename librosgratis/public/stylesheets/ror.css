@@ -1,0 +1,86 @@
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body a {
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+body h1, h2 {
+    font-size: xx-large;
+}
+
+body p {
+    font-size: large;
+}
+
+body h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body p span {
+    font-weight: bold;
+}
+
+body #isbn {
+    margin-top: 0;
+}
+
+body #pblack {
+    text-align: justify;
+}
+
+body #pub {
+    text-align: right;
+}
+
+body {
+    padding: 2% 5%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+body img {
+    width: 6rem;
+    background-color: white;
+    padding: 5%;
+    box-shadow: 0 1px 6px rgb(0 0 0 /12%), 0 1px 4px rgb(0 0 0 / 24%);
+    margin-bottom: 50%;
+}
+
+body #black {
+    width: 12rem;
+}
+
+body #detalle1 {
+    padding-left: 5%;
+    margin-top: 2.5%;
+}
+
+body #detalle2 {
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+body #detalle3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 2%;
+    border-left: 0.25rem solid rgb(169, 56, 22);
+}

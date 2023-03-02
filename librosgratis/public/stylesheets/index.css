@@ -1,0 +1,146 @@
+/* Todos los elementos HTML usarán la fuente "Open Sans", sans-serif */
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* El elemento body sin margen y sin relleno */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* El elemento header tendrá una imagen de fondo */
+
+header {
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header h1 span {
+    font-size: 2em;
+
+}
+
+header p {
+    font-weight: normal;
+    font-size: large;
+    text-align: justify;
+    color: rgb(0,0,0);
+    padding-right: 5%;
+ }
+
+header p span {
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    font-weight: bold;
+}
+
+header {
+    display: grid;
+    grid-template-areas: "area1 area2 area3 area4 area5"
+                         "area1 area2 area3 area4 area5";
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 2%;
+}
+
+header .librogratis {
+    grid-area: area1;
+}
+
+header p {
+    padding-top: 2%;
+    padding-right: 5%;
+}
+
+header img {
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 5%;
+    justify-content: center;
+    box-shadow: 0 1px 6px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 24%);
+}
+
+header #ableson2 {
+    grid-area: area2;
+}
+
+header #ableson {
+    grid-area: area3;
+}
+
+header #ahmed2 {
+    grid-area: area4;
+}
+
+header #adzic {
+    grid-area: area5;
+}
+
+header .caja {
+    margin-top: 50%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+main h2 {
+    font-size: xx-large;
+    font-weight: normal;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "area2-1 area2-1 area2-1 area2-1 area2-1"
+                         "area2-2 area2-3 area2-4 area2-5 area2-6";
+    padding-left: 5%;
+}
+
+main h2 {
+    grid-area: area2-1;
+}
+
+main #black {
+    grid-area: area2-2;
+}
+
+main #callen {
+    grid-area: area2-3;
+}
+
+main #cooper {
+    grid-area: area2-4;
+}
+
+main #crane2 {
+    grid-area: area2-5;
+}
+
+main #bibeault {
+    grid-area: area2-6;
+}
+
+main img {
+    width: 70%;
+    height: 90%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2% 2% 2% 2%;
+    justify-content: center;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 90%), 0 1px 10px rgb(0 0 0 / 50%);
+}
+
+main .caja2 {
+    padding-right: 2%;
+}
