@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/stylesheets/style.css" />
+    <link rel="stylesheet" href="public/stylesheets/style.css">
     <title>Curriculum Vitae</title>
   </head>
 
@@ -18,29 +18,48 @@
     <nav>
       <ul>
         <li><a href="#secciondatos">Datos Personales</a></li>
+        <li><a href="#seccioneducacion">Educación</a></li>
         <li><a href="#seccionredes">Redes Sociales</a></li>
         <li><a href="#seccionhabilidades">Habilidades</a></li>
+        <li><a href="#seccionreferencias">Referencias</a></li>
         <li><a href="#secciongaleria">Galería</a></li>
         <li><a href="#seccioncontactenos">Contáctenos</a></li>
       </ul>
     </nav>
     <!-- Nav: Fin -->
 
-    <section id="secciondatos">
+    <section id="secciondatos" class="seccion">
       <h2>Datos personales</h2>
-
-      <span> Nombres: Oscar David </span>
-      <span> Apellidos: Caranqui Guaman </span>
+      <span>Nota: Los datos expuestos en esta pagina no son reales.</span><br>
+      <span>Apellidos: </span> <span>Caranqui Guaman</span><br>
+      <span>Nombres: </span> <span>Oscar David</span>
 
       <p>¡Hola! Soy ________, con experiencia en desarrollo web en front end y
         back end. Participo en todas las etapas
         del ciclo de desarrollo de proyectos web dinámicos. Además, tengo
         sólidos conocimientos en gestión de proyectos
         y relaciones con los clientes.</p>
-
     </section>
 
-    <section id="seccionredes">
+    <section id="seccioneducacion" class="seccion">
+      <h2>Educación</h2>
+      <h3>Primaria</h3>
+      <ul>
+        <li>Escuela Florida School</li>
+      </ul>
+     
+      <h3>Secundaria</h3>
+      <ul>
+        <li>Colegio Técnico Particular Montepiedra</li>
+      </ul>
+     
+      <h3>Universidad</h3>
+      <ul>
+        <li><a href="https://www.espol.edu.ec/">Escuela Superior Politécnica del Litoral</a></li>
+      </ul>
+    </section>
+
+    <section id="seccionredes" class="seccion">
       <h2>Redes sociales</h2>
 
       <span><a href="https://www.linkedin.com/">LinkedIn</a></span>
@@ -48,30 +67,12 @@
 
     </section>
 
-    <section id="seccionestudios">
-      <h2>Estudios</h2>
-      <ul>
-        <li>Unidad Educativa Montepiedra </li>
-        <li>Escuela Superior Politecnica del Litoral </li>
-      </ul>
-    
-      <section id="seccionexperiencia">
-        <h2>Experiencia Laboral</h2>
-        <ul>
-          <li>Control de encendido y apagado de aireadores eléctricos utilizando aplicativo movil whatsapp</li>
-          <li>Monitoreo de estacion de bomba de motores Cummins</li>
-        </ul>
-
-    </section>
-
-    <section id="seccionhabilidades">
+    <section id="seccionhabilidades" class="seccion">
       <h2>Habilidades Profesionales</h2>
       <ul>
         <li>HTML & CSS</li>
         <li>JavaScript</li>
-        <li>ReactJS</li>
-        <li>Django</li>
-        <li>Express</li>
+        <li>Python</li>
       </ul>
 
       <h2>Idiomas</h2>
@@ -104,69 +105,83 @@
       <ol>
         <li>Docker</li>
         <li>AWS</li>
-        <li>CI/CD</li>
-        <li>Scrum</li>
       </ol>
     </section>
 
-    <aside id="secciongaleria">
-      <img src="public/images/reading.jpg" alt="Reading" width="30%">
+    <section id="seccionreferencias" class="seccion">
+      <h2>Referencias</h2>
+      <h3>Laborales</h3>
+      <ul>
+        <li>Santa Priscila</li>
+      </ul>
+     
+      <h3>Personales</h3>
+      <ul>
+        <li>Geovanny Arguello</li>
+        <li>Richard Hurtado</li>
+      </ul>
+    </section>
+
+
+    <aside id="secciongaleria" class="seccion">
+      <img src="public/images/reading.jpg" alt="Reading" width="300">
       <img
         src="https://cdn.pixabay.com/photo/2015/05/29/19/18/cafe-789635_960_720.jpg"
-        alt="Foto de colaboración" width="30%">
+        alt="Foto de colaboración" width="300">
 
     </aside>
 
-    <section id="seccioncontactenos">
-      <h2>Contáctame</h2>
-      <h3>Sus datos</h3>
+    <section id="seccioncontactenos" class="seccion">
+      <h2 class="caja1">Contáctame</h2>
+      <h3 id="datos">Sus datos</h3>
 
       <form>
-        <label for="nombre">Nombres:</label><input type="text" name="nombre"
-          id="nombre">
-        <label for="nombre">Apellidos:</label><input type="text"
-          name="apellidos"
-          id="apellidos"><br>
+        <div class="formflex">
+          <div id="form1">
+            <label for="nombre">Nombres:</label><input type="text" name="nombre"
+              id="nombre">
+            <label for="apellidos">Apellidos:</label><input type="text"
+              name="apellidos"
+              id="apellidos">
+          </div>
 
-        <label for="edad">Seleccione su rango de edad</label><br>
-        <input type="radio" id="opcion1" name="edad" value="menor25"><label
-          for="opcion1"> menor a 25 años</label>
-        <input type="radio" id="opcion2" name="edad" value="entre26y20"><label
-          for="opcion2"> entre 26 y 30 años</label>
-        <input type="radio" id="opcion3" name="edad" value="mayor31"><label
-          for="opcion3"> mayor a 31 años</label><br><br>
+          <div id="form2">
+            <div><label>Seleccione su rango de edad</label></div>
+            <div><input type="radio" id="opcion1" name="edad" value="menor25"><label
+            for="opcion1"> menor a 25 años</label></div>
+            <div><input type="radio" id="opcion2" name="edad" value="entre26y20"><label
+            for="opcion2"> entre 26 y 30 años</label></div>
+            <div><input type="radio" id="opcion3" name="edad" value="mayor31"><label
+            for="opcion3"> mayor a 31 años</label></div>
+          </div>
 
-        <label for="tiposervicio">Seleccione el tipo de servicio a consultar</label><br>
-        <input type="checkbox" name="frontend" id="frontend"><label
-          for="frontend">Frontend Dev</label><br>
-        <input type="checkbox" name="backend" id="backend"><label for="backend">Backend
-          Dev</label><br>
-        <input type="checkbox" name="scrum" id="scrum"><label for="scrum">Desarrollo
-          de software</label><br>
-        <input type="checkbox" name="cicd" id="cicd"><label for="cicd">CI/CD</label><br>
+          <div id="form3">
+            <div><label>Seleccione el tipo de servicio a consultar</label></div>
+            <div><input type="checkbox" name="frontend" id="frontend"><label
+              for="frontend">Frontend Dev</label></div>
+            <div><input type="checkbox" name="backend" id="backend"><label for="backend">Backend
+              Dev</label></div>
+            <div><input type="checkbox" name="scrum" id="scrum"><label for="scrum">Desarrollo
+              de software</label></div>
+            <div><input type="checkbox" name="cicd" id="cicd"><label for="cicd">CI/CD</label></div>
+          </div>
+        </div>
         <button type="submit">Enviar</button>
       </form>
 
-
-      <h3>Ubicación</h3>
-      
-      <div>
+      <h3 id="ubicacion">Ubicación</h3>
+      <div id="mapa" class="caja2">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.7556328903855!2d-79.96832203119996!3d-2.1450558916238704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303c9a789d1%3A0xef338b00d546aa37!2sLaboratorio%20de%20Computaci%C3%B3n%2C%20LAB-FIEC!5e0!3m2!1ses-419!2sec!4v1673707222407!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>    
-
+      </div>
     </section>
 
     <footer>
       <address>
-        Email: <a href="mailto:CORREO">oscarcaranqui@gmail.com</a><br>
-        Tel: <a href="tel:+TELEFONO">0996457389</a><br><br>
-        DIRECCIÓN: ESPOL<br>
-        CIUDAD: GUAYAQUIL<br>
-        PAÍS: ECUADOR
+        <div>Email: <a href="mailto:oscarcaranqui@gmail.com">CORREO</a></div>
+        <div>Tel: <a href="tel:+593996865932">TELEFONO</a></div>
+        <div>Guayaquil</div>
+        <div>Ecuador</div>
       </address>
     </footer>
-
-    
-
   </body>
 </html>
